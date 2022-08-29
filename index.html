@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="player">
+            <video src="./652333414.mp4" id="video"></video>
+        <div class="player-controls">
+            <div class="progress-content">
+                <div id="progress"></div>
+            </div>
+            <div class="controls">
+                <button id="btn-play" onclick="play()">►</button>
+                <button onclick="volumeUp()">Turn Up The Volume</button>
+                <button onclick="volumeDown()">Turn Down The Volume</button>
+                <button id="mute" onclick="mute()" >Mute</button>
+                <p id="volumee" style="color: white;">Volume: 100</p>
+                <button onclick="skip()">+10s</button>
+                <button onclick="rewind()">-10s</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./index.js"></script>
+
+</body>
+</html>
